@@ -1,0 +1,30 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #ffffff70;
+  background-image: url("https://picsum.photos/1600/900");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.849) 0%,
+    rgba(0, 0, 0, 0.722) 40%,
+    rgba(0, 0, 0, 0.195) 80%
+  );
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
